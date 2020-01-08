@@ -10,6 +10,7 @@ while True:
         break
 
     url=serviceurl + urllib.parse.urlencode({'address':address})
+    #url encoding, spaces are +, commas are %2C
 
     print('Retrieving', url)
     uh=urllib.request.urlopen(url)
